@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Login Form Material Design</title>
+    <!--=======Font Open Sans======-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!--=======Custom Style======-->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+  <div class="form-box">
+    <div class="head">UPDATE</div>        
+    <form action="update" method="post" id="login-form">
+        <div class="form-group">
+          <label class="label-control">
+            <span class="label-text">Name</span>
+          </label>
+          <input type="text" name="username" class="form-control" />
+        </div>
+		
+		<div class="form-group">
+          <label class="label-control">
+            <span class="label-text">Mobile Number</span>
+          </label> 
+          <input type="text" name="mobilenumber" class="form-control" />
+        </div>
+		
+		<div class="form-group">
+          <label class="label-control">
+            <span class="label-text">Email</span>
+          </label>
+          <input type="text" name="emailid" class="form-control" />
+        </div>
+        
+        <div class="form-group">
+          <label class="label-control">
+            <span class="label-text">ID</span>
+          </label>
+          <input type="text" name="id" class="form-control" />
+        </div>    	        
+        <input type="submit" value="UPDATE" class="btn" />
+    </form>
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(window).load(function(){
+  $('.form-group input').on('focus blur', function (e) {
+      $(this).parents('.form-group').toggleClass('active', (e.type === 'focus' || this.value.length > 0));
+  }).trigger('blur');
+});
+</script>
+</body>
+</html>
+
+               

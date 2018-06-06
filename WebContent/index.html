@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>CRUD Operations with Servlet</title>
+    <!--=======Font Open Sans======-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!--=======Custom Style======-->
+    <link rel="stylesheet" href="css/style.css">
+   <style type="text/css">
+	table{
+  width:100%;
+  font-size:30;
+	}
+	tr{
+	width:100%;
+	}
+	td{
+	width:25%;
+	border:1px solid black;
+	}
+	</style>
+
+  </head>
+  <body>
+  <div class="form-box">
+    <div class="head">CRUD Operations using Servlet</div>        
+    <form id="login-form">
+       <table border="1">
+       <tr><td><a href="insert.html" >INSERT</a></td>
+       <td><a href="delete.html" >DELETE</a></td>
+       <td><a href="update.html" >UPDATE</a></td>
+      <td><a href="retrieve.html" >DISPLAY</a></td></tr>     
+       </table>
+    </form>
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(window).load(function(){
+  $('.form-group input').on('focus blur', function (e) {
+      $(this).parents('.form-group').toggleClass('active', (e.type === 'focus' || this.value.length > 0));
+  }).trigger('blur');
+});
+</script>
+</body>
+</html>
+
+               
