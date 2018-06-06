@@ -37,12 +37,12 @@ public class task extends HttpServlet {
 			int i=ps.executeUpdate();
 			
 			if (i>0) {
-				pw.println("Registered Succesfully");
+				pw.println("Data Inserted Succesfully");
 				RequestDispatcher rd=request.getRequestDispatcher("/insert.html");  
  	            rd.include(request, response);
 				
 			} else {
-				pw.println("Registration Failed");
+				pw.println("Faile to Insert Data");
 
 			}
 		} catch (Exception e) 
